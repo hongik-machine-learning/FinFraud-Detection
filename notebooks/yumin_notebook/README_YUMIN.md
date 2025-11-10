@@ -1,8 +1,3 @@
-# Yumin Experiment Notebook
-
-> 작성자: 김유민  
-> 프로젝트: SSL-FinFraud-Detection  
-> 주제: Self-Supervised Learning(SSL) 사전학습과 라벨 비율별 실험을 통한 데이터 효율성 비교
 
 ---
 
@@ -64,14 +59,7 @@ for r in ratios:
     clf.fit(Z_train[idx], y_train[idx])
 ```
 
-#### 예시 결과
 
-| label_ratio | AUC | F1 | Acc | n_train |
-|--------------|-----|----|------|----------|
-| 0.1 | 0.73 | 0.61 | 0.68 | 2400 |
-| 0.2 | 0.78 | 0.65 | 0.70 | 4800 |
-| 0.5 | 0.82 | 0.71 | 0.75 | 12000 |
-| 1.0 | 0.85 | 0.74 | 0.78 | 24000 |
 
 > **결론:** SSL로 학습한 Encoder를 사용하면  
 > 라벨이 적어도 성능 하락이 덜하고 더 안정적으로 작동합니다.
@@ -96,4 +84,4 @@ for r in ratios:
 | Python | 3.10+ |
 | PyTorch | 2.0 이상 |
 | scikit-learn | 1.2 이상 |
-| pandas, numpy | 최신 버전 |
+
