@@ -1,1 +1,1 @@
-# SSL-FinFraud-Detection
+# FinFraud-Detection
